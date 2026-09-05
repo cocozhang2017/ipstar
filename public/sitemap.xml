@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ipstar.net/en</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/en/tools</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/tools"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/tools"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh/tools</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/tools"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/tools"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/en/tools/ip-reputation</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/tools/ip-reputation"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/tools/ip-reputation"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh/tools/ip-reputation</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/tools/ip-reputation"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/tools/ip-reputation"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/en/tools/ip-geo</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/tools/ip-geo"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/tools/ip-geo"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh/tools/ip-geo</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/tools/ip-geo"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/tools/ip-geo"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/en/tools/proxy-tester</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/tools/proxy-tester"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/tools/proxy-tester"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh/tools/proxy-tester</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/tools/proxy-tester"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/tools/proxy-tester"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/en/guides</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/guides"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/guides"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh/guides</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/guides"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/guides"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/en/guides/tiktok-shop</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/guides/tiktok-shop"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/guides/tiktok-shop"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh/guides/tiktok-shop</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/guides/tiktok-shop"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/guides/tiktok-shop"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/en/guides/web-scraping</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/guides/web-scraping"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/guides/web-scraping"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh/guides/web-scraping</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/guides/web-scraping"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/guides/web-scraping"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/en/guides/static-isp-ecommerce</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/guides/static-isp-ecommerce"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/guides/static-isp-ecommerce"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh/guides/static-isp-ecommerce</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/guides/static-isp-ecommerce"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/guides/static-isp-ecommerce"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/en/reviews</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/reviews"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/reviews"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh/reviews</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/reviews"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/reviews"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/en/blog</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/blog"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh/blog</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/blog"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/en/about</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.50</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/about"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/about"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh/about</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.50</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/about"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/about"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/en/contact</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/contact"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh/contact</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/contact"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/en/privacy</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/privacy"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh/privacy</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/privacy"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/en/terms</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/terms"/>
+  </url>
+  <url>
+    <loc>https://ipstar.net/zh/terms</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ipstar.net/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ipstar.net/zh/terms"/>
+  </url>
+</urlset>
