@@ -19,23 +19,25 @@ export function CurrentIpBadge({ label, loading = 'Loading...' }: Props) {
   useEffect(() => {
     let cancelled = false;
 
-    // ipify 只返回 IP,免费、无广告、支持 CORS
-    fetch('https://api.ipify.org?format=json')
+    // 调自己的 Worker 获取客户端 IP(走 Cloudflare 内网,不被墙)
+    fetch('/api/ip/my')
       .then((r) => r.json())
-      .then(async (ipify: { ip: string }) => {
-        if (cancelled) return;
-        // 拿到 IP 后再查归属地(同样无密钥、支持 CORS)
+      .then(async (res: { ip: string }) => {
+        if (cancelled || !res.ip) return;
+        // 拿到 IP 后查归属地(用 ipapi.co 备用,也被墙就忽略)
         try {
-          const geo = await fetch(`https://ipapi.co/${ipify.ip}/json/`).then((r) => r.json());
+          const geo = await fetch(
+            `https://ipapi.co/${res.ip}/json/`,
+          ).then((r) => r.json());
           if (!cancelled) {
             setData({
-              ip: ipify.ip,
+              ip: res.ip,
               country: geo.country_name,
               isp: geo.org,
             });
           }
         } catch {
-          if (!cancelled) setData({ ip: ipify.ip });
+          if (!cancelled) setData({ ip: res.ip });
         }
       })
       .catch(() => !cancelled && setErr(true));
