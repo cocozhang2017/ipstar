@@ -21,6 +21,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Card, Badge, SectionHeader, CardLinkGrid } from '@/components/ui/card';
 import { Input, Field } from '@/components/ui/input';
+import { CurrentIpBadge } from '@/components/current-ip-badge';
 import { cn } from '@/lib/utils';
 
 
@@ -265,6 +266,14 @@ export default async function HomePage({
                       action={`/${locale}/tools/ip-reputation`}
                       method="get"
                     >
+                      {/* 当前 IP 显示条 */}
+                      <div className="mb-2">
+                        <CurrentIpBadge
+                          label={t('hero.currentIpLabel')}
+                          loading={t('hero.currentIpLoading')}
+                        />
+                      </div>
+
                       <Field
                         label={t('hero.fieldLabel')}
                         hint={t('hero.fieldHint')}

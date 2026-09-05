@@ -103,6 +103,8 @@
       "placeholder": "输入 IPv4(如 8.8.8.8)或留空",
       "submit": "查询 IP",
       "examplesLabel": "快速示例",
+      "currentIpLabel": "你的 IP",
+      "currentIpLoading": "检测中...",
       "poweredBy": "由我们的 Worker 后端驱动",
       "kvCached": "KV 缓存",
       "stats": {

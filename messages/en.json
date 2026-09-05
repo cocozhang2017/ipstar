@@ -103,6 +103,8 @@
       "placeholder": "Enter an IPv4 (e.g. 8.8.8.8) or leave blank",
       "submit": "Check IP",
       "examplesLabel": "Quick samples",
+      "currentIpLabel": "Your IP",
+      "currentIpLoading": "Detecting...",
       "poweredBy": "Powered by our Worker backend",
       "kvCached": "KV cached",
       "stats": {
