@@ -15,7 +15,8 @@ const known = [
   'proxyrack-dc',
 ] as const;
 
-export async function generateStaticParams() {
+
+export function generateStaticParams() {
   return known.map((slug) => ({ slug }));
 }
 

@@ -5,6 +5,8 @@ import { ArrowRight, Star, CheckCircle2, XCircle, Clock } from 'lucide-react';
 import { SectionHeader, Badge } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
+
+export const runtime = 'edge';
 export async function generateMetadata({
   params,
 }: {

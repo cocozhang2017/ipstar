@@ -3,6 +3,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { SectionHeader, CardLinkGrid } from '@/components/ui/card';
 import { ShoppingCart, FileSearch, BookOpen } from 'lucide-react';
 
+
+export const runtime = 'edge';
 export async function generateMetadata({
   params,
 }: {

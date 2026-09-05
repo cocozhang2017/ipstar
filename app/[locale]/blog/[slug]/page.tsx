@@ -13,7 +13,8 @@ const slugs = [
   'blacklist-delisting-playbook',
 ] as const;
 
-export async function generateStaticParams() {
+
+export function generateStaticParams() {
   return slugs.map((slug) => ({ slug }));
 }
 

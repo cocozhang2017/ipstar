@@ -4,6 +4,8 @@ import { SectionHeader, CardLinkGrid } from '@/components/ui/card';
 import { ShieldAlert, Globe2, Zap } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 
+
+export const runtime = 'edge';
 export async function generateMetadata({
   params,
 }: {

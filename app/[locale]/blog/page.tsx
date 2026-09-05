@@ -4,6 +4,8 @@ import { Link } from '@/i18n/navigation';
 import { ArrowRight } from 'lucide-react';
 import { SectionHeader, Badge } from '@/components/ui/card';
 
+
+export const runtime = 'edge';
 export async function generateMetadata({
   params,
 }: {

@@ -23,6 +23,8 @@ import { Card, Badge, SectionHeader, CardLinkGrid } from '@/components/ui/card';
 import { Input, Field } from '@/components/ui/input';
 import { cn } from '@/lib/utils';
 
+
+export const runtime = 'edge';
 export async function generateMetadata({
   params,
 }: {
