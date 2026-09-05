@@ -952,7 +952,8 @@
       },
       "submit": "Run proxy test",
       "loading": "Worker is routing the test to our overseas VPS backend…",
-      "errorTest": "Proxy test failed. Retry or check endpoint."
+      "errorTest": "Proxy test failed. Retry or check endpoint.",
+      "errorServiceUnavailable": "Proxy testing service is not available on this server yet."
     },
     "view": {
       "title": {

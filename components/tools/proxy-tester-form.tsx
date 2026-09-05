@@ -70,7 +70,14 @@ export function ProxyTesterForm() {
         setResult(data);
       } catch (err: any) {
         setResult(null);
-        setCallError(err?.message || t('errorTest'));
+        // Worker 未实现 /api/proxy/test 时返回 "ip query param required"
+        // 或 404,统一提示服务暂不可用
+        const msg = err?.message || '';
+        if (msg.includes('ip query param') || msg.includes('404') || msg.includes('Not Found')) {
+          setCallError(t('errorServiceUnavailable'));
+        } else {
+          setCallError(msg || t('errorTest'));
+        }
       }
     });
   }

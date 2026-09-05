@@ -952,7 +952,8 @@
       },
       "submit": "执行代理测试",
       "loading": "Worker 正在将测试路由至海外 VPS 后端…",
-      "errorTest": "代理测试失败。请重试或检查端点配置。"
+      "errorTest": "代理测试失败。请重试或检查端点配置。",
+      "errorServiceUnavailable": "当前服务器暂未开放代理测试服务。"
     },
     "view": {
       "title": {

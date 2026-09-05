@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/icon', type: 'image/png', sizes: '64x64' },
+      { url: `${siteUrl}/favicon.ico`, sizes: 'any' },
+      { url: `${siteUrl}/icon`, type: 'image/png', sizes: '64x64' },
     ],
-    apple: [{ url: '/apple-icon', sizes: '180x180' }],
-    shortcut: [{ url: '/favicon.ico' }],
+    apple: [{ url: `${siteUrl}/apple-icon`, sizes: '180x180' }],
+    shortcut: [{ url: `${siteUrl}/favicon.ico` }],
   },
   robots: {
     index: true,
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     images: [
       {
-        url: '/opengraph-image',
+        url: `${siteUrl}/opengraph-image`,
         width: 1200,
         height: 630,
         alt: 'IPStar — Free IP Tools',
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/twitter-image'],
+    images: [`${siteUrl}/twitter-image`],
   },
 };
 

@@ -50,7 +50,7 @@ export async function generateMetadata({
       description: t('ogDescription'),
       images: [
         {
-          url: '/opengraph-image',
+          url: `${siteUrl}/opengraph-image`,
           width: 1200,
           height: 630,
           alt: 'IPStar — Free IP Tools',
@@ -61,7 +61,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: t('ogTitle'),
       description: t('ogDescription'),
-      images: ['/twitter-image'],
+      images: [`${siteUrl}/twitter-image`],
     },
     robots: {
       index: true,

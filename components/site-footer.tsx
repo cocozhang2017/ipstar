@@ -90,14 +90,14 @@ export async function SiteFooter() {
           {/* 社交胶囊 */}
           <div className="flex items-center gap-2">
             <a
-              href="#"
+              href=""
               aria-label="GitHub"
               className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[hsl(var(--glass-border))] bg-[hsl(var(--glass))] backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] text-muted-foreground hover:text-foreground hover:border-accent/50 transition-colors"
             >
               <Github className="h-4 w-4" strokeWidth={2.1} />
             </a>
             <a
-              href="#"
+              href=""
               aria-label="Twitter"
               className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[hsl(var(--glass-border))] bg-[hsl(var(--glass))] backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] text-muted-foreground hover:text-foreground hover:border-accent/50 transition-colors"
             >
