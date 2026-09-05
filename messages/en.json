@@ -1,0 +1,988 @@
+{
+  "meta": {
+    "titleDefault": "IPStar — Free IP Reputation & Geolocation Tools for Sellers & Developers",
+    "titleTemplate": "%s · IPStar",
+    "description": "Free online IP lookup, geolocation, reputation and blacklist checker. Built for small e-commerce sellers, web scrapers and developers. No fancy sales pitch, just clean tools.",
+    "keywords": [
+      "IP lookup",
+      "IP geolocation",
+      "IP reputation",
+      "blacklist check",
+      "proxy tester",
+      "AbuseIPDB",
+      "ipapi.is",
+      "small seller tools",
+      "web scraping proxy",
+      "TikTok Shop proxy",
+      "ecommerce proxy"
+    ],
+    "ogTitle": "IPStar — Free IP Tools for Sellers & Developers",
+    "ogDescription": "Free IP lookup, geolocation, reputation and blacklist checker. Lightweight, technical, no fluff."
+  },
+  "common": {
+    "access": {
+      "skipToContent": "Skip to content"
+    },
+    "switcher": {
+      "label": "Language"
+    },
+    "backToHome": "Back to home",
+    "header": {
+      "homeAria": "IPStar home",
+      "toggleNavAria": "Toggle navigation",
+      "nav": {
+        "tools": "Tools",
+        "guides": "Proxy Guides",
+        "reviews": "Reviews",
+        "blog": "Blog"
+      },
+      "checkIp": "Check IP",
+      "checkIpReputation": "Check IP Reputation"
+    },
+    "footer": {
+      "brandDesc": "Lightweight, privacy-friendly IP & proxy tools for small e-commerce sellers, scrapers and indie developers.",
+      "copyright": "© {year} IPStar. All rights reserved.",
+      "dataSource": "Data aggregated from ipapi.is & AbuseIPDB. Cached via Cloudflare Workers KV.",
+      "cols": {
+        "tools": {
+          "title": "Tools",
+          "links": {
+            "reputation": "IP Reputation Check",
+            "geo": "IP Geo Lookup",
+            "proxy": "Proxy Tester",
+            "all": "All Tools"
+          }
+        },
+        "guides": {
+          "title": "Proxy Guides",
+          "links": {
+            "tiktok": "Proxies for TikTok Shop",
+            "scraping": "Web Scraping for Beginners",
+            "isp": "Static ISP Proxy for E‑commerce",
+            "all": "All Guides"
+          }
+        },
+        "resources": {
+          "title": "Resources",
+          "links": {
+            "reviews": "Reviews",
+            "blog": "Blog",
+            "about": "About",
+            "contact": "Contact"
+          }
+        },
+        "legal": {
+          "title": "Legal",
+          "links": {
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Service"
+          }
+        }
+      }
+    },
+    "notfound": {
+      "title": "Page not found",
+      "desc": "The URL you followed doesn't exist, or the review / post you're looking for was moved.",
+      "goHome": "Go home",
+      "checkIp": "Check an IP"
+    }
+  },
+  "home": {
+    "metaTitle": "Free IP Reputation, Geolocation & Proxy Tools",
+    "metaDesc": "Free online IP lookup, geolocation, reputation and blacklist checker. Built for small e-commerce sellers, web scrapers and developers. No fluff, no upsells.",
+    "hero": {
+      "badge": "Free forever · No account needed",
+      "h1": "Free IP tools for small sellers & indie developers.",
+      "p": "Check reputation, geolocation and blacklist status of any IP. Test proxies before you pay. Lightweight, technical, {noEnterprise} — inspired by vpsknow & ipnut.",
+      "noEnterprise": "no enterprise sales pitch",
+      "cardTitle": "Instant IP lookup",
+      "cardSubtitle": "Real-time data from 12+ upstream sources",
+      "statusLive": "Live · <120ms",
+      "fieldLabel": "IP address",
+      "fieldHint": "Leave empty to check your own public IP",
+      "placeholder": "Enter an IPv4 (e.g. 8.8.8.8) or leave blank",
+      "submit": "Check IP",
+      "examplesLabel": "Quick samples",
+      "poweredBy": "Powered by our Worker backend",
+      "kvCached": "KV cached",
+      "stats": {
+        "accuracy": "Avg. accuracy",
+        "latency": "Median latency",
+        "datasets": "Data sources"
+      }
+    },
+    "coreTools": {
+      "eyebrow": "Core Tools",
+      "title": "Three tools, zero friction",
+      "desc": "Start here. Each page is built to answer one question fast — with JSON you can actually trust.",
+      "viewAll": "View all tools"
+    },
+    "tools": {
+      "reputation": {
+        "title": "IP Reputation Check",
+        "desc": "Detect VPN, datacenter, residential & Tor IPs. Abuse reports, blacklist hits and 0–100 risk score.",
+        "badge": "Most Used"
+      },
+      "geo": {
+        "title": "IP Geo Lookup",
+        "desc": "Instant country, city, ASN, ISP, timezone and connection type. Useful for targeting & compliance.",
+        "badge": "Free"
+      },
+      "proxy": {
+        "title": "Proxy Tester",
+        "desc": "Test reachability, latency, anonymity level and DNS leak. Runs from our overseas VPS endpoints.",
+        "badge": "Beta"
+      }
+    },
+    "why": {
+      "eyebrow": "Why IPStar",
+      "title": "Built for the use case giants ignore",
+      "desc": "We don't sell proxies. We just tell you if they're any good."
+    },
+    "features": {
+      "privacy": {
+        "title": "Privacy by default",
+        "desc": "Keys live in Cloudflare Workers — never exposed to the browser. Results cached in KV for 12–24h to reduce external calls."
+      },
+      "seller": {
+        "title": "Small seller friendly",
+        "desc": "Built for indie shops, dropshippers and solo devs. No \"schedule a demo\" popups, no \"enterprise plan\"."
+      },
+      "honest": {
+        "title": "Technical & honest",
+        "desc": "Plain numbers, clear sources, real cache timestamps. No fluffy marketing scorecards."
+      },
+      "fast": {
+        "title": "Mobile first, fast",
+        "desc": "Static pages on Cloudflare Pages. Fonts preloaded, images in WebP. Target LCP under 2.5s."
+      }
+    },
+    "guidesSection": {
+      "eyebrow": "Proxy Guides",
+      "title": "Practical buying guides by use case",
+      "desc": "Sorted by what you're actually trying to do — not by who pays the highest affiliate fee.",
+      "all": "All guides"
+    },
+    "guides": {
+      "tiktok": {
+        "title": "Proxies for TikTok Shop",
+        "desc": "What proxies work for store logins, scraping & multi-account setups. Practical, no affiliate fluff."
+      },
+      "scraping": {
+        "title": "Web Scraping for Beginners",
+        "desc": "Residential vs datacenter, rotation pitfalls, captchas, blocking and how to pick a provider in 2026."
+      },
+      "isp": {
+        "title": "Static ISP for E‑commerce",
+        "desc": "When you need a clean, long-stay IP for Amazon, Shopify, Mercado or your marketplace seller account."
+      }
+    },
+    "cta": {
+      "badge": "Get started now",
+      "title": "Run a small shop or scraper? Start with a free check.",
+      "desc": "Verify your proxy IPs before your marketplace does. It takes 3 seconds and costs nothing.",
+      "checkMyIp": "Check my IP",
+      "testProxy": "Test a proxy"
+    }
+  },
+  "about": {
+    "metaTitle": "About",
+    "metaDesc": "What IPStar is, who builds it, and why we decided not to sell proxies.",
+    "backToHome": "Back to home",
+    "badge": "About",
+    "h1": "A small set of IP tools, for small sellers and small teams.",
+    "intro": "IPStar is run by a small ops team that also manages a handful of real e-commerce seller accounts and small scraping workloads. We got tired of every IP tool landing page looking like a Salesforce pitch deck, so we built what we wanted for ourselves.",
+    "whatWeAreTitle": "What we are",
+    "whatWeAre": [
+      "A front-end on Cloudflare Pages (Next.js static export) talking to our Cloudflare Worker aggregation layer.",
+      "A thin, honest wrapper around ipapi.is and AbuseIPDB, with KV cache to keep costs sane.",
+      "A reviewer of small and mid-tier proxy providers — the ones that are too small to have enterprise sales teams and too cheap to appear on every top-10 list."
+    ],
+    "whatWeNotTitle": "What we are NOT",
+    "whatWeNot": [
+      "We do not sell proxies. Ever.",
+      "We do not sell \"IP warming\" services, account reinstatement, or any gray-area marketplace service.",
+      "We do not take sponsored reviews — a provider cannot pay us to move from a 3-star to a 4-star."
+    ],
+    "affiliateTitle": "Affiliate policy",
+    "affiliateIntro": "Some links on /guides and /reviews are affiliate links. That means if you sign up through them, we get a small commission at no extra cost to you. Our affiliation policy has three rules:",
+    "affiliateRules": [
+      "We only link to providers we have paid plans for.",
+      "Negative reviews stay negative regardless of affiliate status.",
+      "The 3 giant providers get no affiliate push — they are reviewed for completeness only."
+    ],
+    "privacyTitle": "Privacy & data retention",
+    "privacyDesc": "Query inputs are used only to serve the current request. Worker KV caches by the IP being queried (to protect upstream API quotas), not by the visitor's IP. Full details in our Privacy Policy."
+  },
+  "contact": {
+    "metaTitle": "Contact",
+    "metaDesc": "Send questions, review corrections, data requests or partnership pitches.",
+    "backToHome": "Back to home",
+    "badge": "Contact",
+    "h1": "Get in touch",
+    "intro": "We read every email but answer the short, specific ones first. Review corrections and data requests take priority over everything else.",
+    "form": {
+      "nameLabel": "Your name",
+      "namePlaceholder": "Jane Doe",
+      "emailLabel": "Email",
+      "emailPlaceholder": "jane@example.com",
+      "topicLabel": "Topic",
+      "topicOptions": {
+        "general": "General question",
+        "review": "Review correction / dispute",
+        "data": "Data / privacy request",
+        "bug": "Bug report",
+        "partner": "Partnership"
+      },
+      "messageLabel": "Message",
+      "messageHint": "Keep it short — 1–3 paragraphs is plenty.",
+      "messagePlaceholder": "Describe what you need, include any relevant URLs or IPs…",
+      "send": "Send email"
+    },
+    "aside": {
+      "emailLabel": "Email",
+      "publicInboxLabel": "Public inbox",
+      "publicInboxDesc": "Mon–Fri. We respond within 48 hours for review disputes.",
+      "beforeWriteLabel": "Before you write",
+      "beforeWriteItems": [
+        "Did you check the Blog FAQ first?",
+        "Review disputes: include invoice + 3 IP samples.",
+        "No cold SEO link-building pitches, please."
+      ]
+    }
+  },
+  "tools": {
+    "metaTitle": "Tools — IP Lookup, Reputation & Proxy Testing",
+    "metaDesc": "Browse all free IP tools: reputation & blacklist check, geolocation lookup and proxy tester.",
+    "sectionHeader": {
+      "eyebrow": "Tools",
+      "title": "All free IP & proxy tools",
+      "desc": "Simple, technical, no upsell. Results are cached via Cloudflare Workers KV for 12–24h."
+    },
+    "tools": {
+      "reputation": {
+        "title": "IP Reputation Check",
+        "desc": "Reputation score, abuse reports, blacklist hits, VPN/datacenter/Tor detection.",
+        "badge": "Popular"
+      },
+      "geo": {
+        "title": "IP Geo Lookup",
+        "desc": "Country, region, city, ASN, ISP, coordinates and connection type.",
+        "badge": "Free"
+      },
+      "proxy": {
+        "title": "Proxy Tester",
+        "desc": "Test HTTP/HTTPS/SOCKS proxies for latency, anonymity level and DNS leaks.",
+        "badge": "Beta"
+      }
+    },
+    "backendTitle": "How the backend works",
+    "backendIntro": "Your browser calls endpoints under /api/* on this domain. Those are served by a Cloudflare Worker, which:",
+    "backendSteps": [
+      "Looks up the request in KV cache (12–24h TTL, keyed by IP).",
+      "Queries ipapi.is for geolocation and base reputation.",
+      "Queries AbuseIPDB for reports and blacklist categories.",
+      "Rate-limits per client IP to prevent abuse.",
+      "Returns one unified JSON payload for the page to render."
+    ],
+    "backendOutro": "API keys never leave the Worker. If you're building your own tools, read why this pattern saves 90% of your API budget."
+  },
+  "ipReputation": {
+    "metaTitle": "IP Reputation & Blacklist Check",
+    "metaDesc": "Free IP reputation check. 0–100 risk score, abuse reports, blacklist hits, VPN/Tor/datacenter detection. Aggregated from ipapi.is and AbuseIPDB.",
+    "eyebrow": "Tools / IP Reputation",
+    "title": "IP Reputation & Blacklist Check",
+    "desc": "One look to tell if an IP is flagged for spam, abuse, VPN, botnet or proxy. Leaves Worker KV cache for 12–24h after first lookup."
+  },
+  "ipGeo": {
+    "metaTitle": "IP Geolocation Lookup",
+    "metaDesc": "Instant IP geolocation: country, city, ASN, ISP, timezone, coordinates and connection type. Free, no sign-up.",
+    "eyebrow": "Tools / Geo Lookup",
+    "title": "IP Geolocation Lookup",
+    "desc": "Country, region, city, ASN, ISP, coordinates and anonymous signals. Powered by ipapi.is via our Worker KV cache."
+  },
+  "proxyTester": {
+    "metaTitle": "Proxy Tester — Latency, Anonymity & DNS Leak",
+    "metaDesc": "Test HTTP/HTTPS/SOCKS proxy endpoints for reachability, latency, anonymity level and DNS leaks. Runs from overseas VPS via Cloudflare Workers.",
+    "eyebrow": "Tools / Proxy Tester",
+    "title": "Proxy Tester",
+    "desc": "Check reachability, latency, anonymity level (Elite/Anonymous/Transparent) and DNS leaks. Tests route through our Worker broker to overseas VPS probes."
+  },
+  "guides": {
+    "metaTitle": "Proxy Guides — Choose the Right Proxy for Your Use Case",
+    "metaDesc": "No-nonsense proxy buying guides sorted by real tasks: TikTok Shop, web scraping and static ISP for e-commerce sellers.",
+    "sectionHeader": {
+      "eyebrow": "Proxy Guides",
+      "title": "Guides by what you're actually trying to do",
+      "desc": "We don't rank providers by affiliate payout. These guides help you pick the *type* of proxy first, then review the small-to-mid providers that actually work."
+    },
+    "guides": {
+      "tiktok": {
+        "title": "Proxies for TikTok Shop",
+        "desc": "Store login, multi-account, scraping and content manager scenarios. Residential vs ISP vs mobile proxies, which rotation actually works, common anti-fraud triggers.",
+        "badge": "TikTok"
+      },
+      "scraping": {
+        "title": "Web Scraping for Beginners",
+        "desc": "Residential vs datacenter in 2026, how to test rotation, how many IPs you really need, captcha bypass myths and provider pricing transparency checklist.",
+        "badge": "Scraping"
+      },
+      "isp": {
+        "title": "Static ISP for E‑commerce",
+        "desc": "When Amazon / Shopify / Mercado sellers need a long-stay, ISP-granded IP. How to detect reused / abused static IPs before you bind your seller account to them.",
+        "badge": "E‑commerce"
+      }
+    },
+    "cards": {
+      "howWeTest": {
+        "title": "How we test",
+        "body": "Every claim on this site is cross-checked with our own Worker + VPS probe stack: multi-city latency, real-world site tests, re-checks after 2/7/30 days."
+      },
+      "affiliatePolicy": {
+        "title": "Affiliate policy",
+        "body": "We only link to providers we actually use. Affiliate links pay for probes; we keep a public conflict list and skip big vendors whose support tiers lock out small buyers."
+      },
+      "lastUpdated": {
+        "title": "Last updated",
+        "body": "Core guide pages are refreshed quarterly. Small-provider reviews are updated whenever their network quality changes materially — not on a publishing calendar."
+      }
+    }
+  },
+  "tiktokShop": {
+    "metaTitle": "Proxies for TikTok Shop Sellers",
+    "metaDesc": "Practical guide to proxy types, anti-fraud signals and multi-account setups for TikTok Shop sellers. Honest, no affiliate fluff.",
+    "backToGuides": "All proxy guides",
+    "badgeCategory": "TikTok Shop",
+    "badgeUpdated": "Last updated: Sep 2026",
+    "h1": "Proxies for TikTok Shop — the small-seller guide",
+    "intro": "TikTok Shop's anti-fraud is fingerprint + IP + account behavior. Here is the minimum you actually need to know before buying proxies in 2026.",
+    "sections": [
+      {
+        "title": "1. What TikTok Shop actually flags on the IP side",
+        "desc": "From what we can replicate with our own test accounts, the IP checks are roughly, in order of weight:",
+        "items": [
+          "IP ownership type. Datacenter ASNs get the highest scrutiny. Residential → ISP → mobile → datacenter, from safest to riskiest.",
+          "Blacklist / reputation. Our IP reputation checker catches most of them. If your proxy IP scores below 70, don't bind a real seller account to it.",
+          "Geo mismatch. Store country, payment method, and proxy exit should be in the same country. Cross-region logins trigger SMS or KFC re-verification almost every time.",
+          "IP churn. Constantly rotating residential for a single seller login is actually worse than a clean static IP. Use sticky sessions of at least 30 minutes, ideally a dedicated static ISP per account."
+        ]
+      },
+      {
+        "title": "2. Recommended proxy type per scenario",
+        "items": [
+          "Daily seller login (1 account / 1 person): Static ISP, 1 dedicated IP per account, same country as the store.",
+          "Content manager / VA in another country: Static ISP in the store's country, shared only with that VA.",
+          "Scraping competitor listings / ads: Rotating residential, geo-targeted, with per-request rotation. Separate from any IP you use to log in.",
+          "Multi-account setup (e.g. 3–10 stores): One static ISP per account, different subnets, staggered onboarding. No shared residential pools."
+        ]
+      },
+      {
+        "title": "3. What to test with our tooling before you commit",
+        "items": [
+          "On the provider dashboard, spin up 1–3 trial IPs. Run each through IP Reputation Check. Reject anything already on spam lists or flagged as known VPN / datacenter residential-mislabeled.",
+          "Run Proxy Tester with the exact auth you'll use. Transparent anonymity = hard reject. You want Elite, always.",
+          "Test over 3 days, not 3 minutes. A provider whose IPs score 95 on day 0 and 45 on day 2 has a dirty pool."
+        ]
+      },
+      {
+        "title": "4. Small-provider shortlist (not exhaustive)",
+        "desc": "We intentionally skip the 3 household-name giants — their small-seller support is awful and their oversubscribed residential pools land in TikTok's bad-book faster anyway. See our Reviews page for the current round-up of small-to-mid providers we actually use."
+      },
+      {
+        "title": "5. Common mistakes",
+        "items": [
+          "Buying 100 rotating residentials for 3 stores: overkill + risky.",
+          "Using the same proxy on 2+ seller accounts: instant link.",
+          "Ignoring browser fingerprint. Good IP + bad fingerprint still loses.",
+          "Buying \"TikTok dedicated\" labeled packages at 2× price — most are repackaged ISP."
+        ]
+      }
+    ]
+  },
+  "webScraping": {
+    "metaTitle": "Web Scraping Proxies for Beginners",
+    "metaDesc": "Residential vs datacenter, rotation basics, how many IPs you need, captcha bypass myths and a pricing transparency checklist.",
+    "backToGuides": "All proxy guides",
+    "badgeCategory": "Web Scraping",
+    "badgeForBeginners": "For beginners",
+    "h1": "Web scraping proxies — start here before you spend a dollar",
+    "intro": "Almost every beginner overbuys. This page walks you through picking a proxy type, sizing your pool, and 3 ways you're probably wasting money.",
+    "sections": [
+      {
+        "title": "1. The two proxy types you actually need",
+        "desc": "95% of scraping jobs need either datacenter or rotating residential. ISP is a niche middle tier. Mobile proxies are only worth the cost for a handful of mobile-only sites.",
+        "items": [
+          "Datacenter: cheap, fast, easy to detect. Good for uncached public APIs, non-blocking sites, internal crawls. Expect $0.30–$1.50 per GB or $0.40–$2 per IP / month.",
+          "Residential (rotating gateway): real home/office ISPs, expensive, much harder to block. Default pick for Amazon, Google, airlines, travel, heavily protected e-commerce. Expect $3–$12 per GB, bandwidth metered."
+        ]
+      },
+      {
+        "title": "2. How to size your pool (the quick rule of thumb)",
+        "items": [
+          "Estimate your sustained requests per minute (RPM) at your target concurrency.",
+          "Assume each residential IP is good for 5–15 successful requests before it burns for that site.",
+          "Multiply by 2 if the site uses aggressive bot management (Cloudflare Enterprise, Kasada, DataDome)."
+        ],
+        "desc": "Most solo scrapers over-buy by 5–10× on their first project. Start with a 5 GB / 1 week plan, not a 1 TB / year plan."
+      },
+      {
+        "title": "3. 3 questions every provider must answer honestly",
+        "items": [
+          "Is bandwidth billed per request byte or per egress byte? Per-request inflates cost 2–3× on compressed responses.",
+          "Are failed / 4xx / 5xx requests billed? Good providers don't bill for upstream errors or proxy connect failures.",
+          "What's the actual residential share? Many sell \"residential\" pools that are 40% ISP + datacenter. Always sample a random 50 IPs through IP Geo Lookup and Reputation."
+        ]
+      },
+      {
+        "title": "4. Captcha \"solver\" is not a proxy feature",
+        "desc": "The single most misleading claim on provider landing pages. A good IP pool reduces how often you see captchas, it does not solve them. Budget separately for a solver if your target has aggressive protection."
+      },
+      {
+        "title": "5. Testing a new provider (2-hour checklist)",
+        "items": [
+          "Buy the smallest paid plan — never a \"free trial\" that whitelists only 3 IPs, those pools are usually hand-picked.",
+          "Pull 20 random exits. Run each through Proxy Tester. Reject the whole provider if >20% come back as Transparent.",
+          "Run a 30-minute small crawl at your target RPM. If success rate drops below 70% in the first 30 minutes, move on — don't \"give it time\"."
+        ]
+      }
+    ]
+  },
+  "staticIsp": {
+    "metaTitle": "Static ISP Proxy for E‑commerce Stores",
+    "metaDesc": "When and how to use static ISP proxies for marketplace seller accounts (Amazon, Shopify, Mercado). How to detect reused / abused static IPs.",
+    "backToGuides": "All proxy guides",
+    "badgeCategory": "Static ISP",
+    "badgeForEcommerce": "E‑commerce",
+    "h1": "Static ISP proxies for marketplace seller accounts",
+    "intro": "You don't need 10,000 rotating IPs. For a real seller account you want one clean, stable, long-stay IP that looks like a normal home broadband connection. This is how you pick it.",
+    "sections": [
+      {
+        "title": "1. What \"Static ISP\" actually means (and why it matters)",
+        "desc": "A static ISP proxy is a single, non-rotating IP whose WHOIS owner is a real residential ISP (Comcast, AT&T, Virgin, etc.), not a hosting company like DigitalOcean or OVH. The difference matters because marketplaces score hosting ASNs very high on the suspicion meter."
+      },
+      {
+        "title": "2. When you should (and should not) use one",
+        "items": [
+          "Use it when: logging into 1–2 seller accounts per IP (Amazon, Shopify Payments, Mercado, Etsy, TikTok Shop seller panel).",
+          "Do NOT use it when: scraping 1000+ URLs, testing ads at scale, or anything that will burn the IP. ISP static IPs are 10–100× more expensive per GB than rotating residential pools."
+        ]
+      },
+      {
+        "title": "3. The 4 checks before you bind your account",
+        "items": [
+          "ASN / ISP check. Look up the IP on IP Geo. If ASN org contains \"Hosting\", \"Cloud\", \"Server\", walk away — it's a mislabeled datacenter.",
+          "Reputation check. Run through IP Reputation. We personally require ≥85 for seller logins. Any blacklist listing = reject.",
+          "Static & sticky. Reboot the proxy endpoint via the provider dashboard 3 times. Exit IP must not change.",
+          "72-hour soak. Route only light, normal-looking browsing (no logins) through the IP for 3 days. Re-run reputation check at 24h and 72h. If score drops 15+ points, the IP is on a reused / bad subnet and the provider has poor hygiene."
+        ]
+      },
+      {
+        "title": "4. Pricing sanity check",
+        "desc": "Legit static ISP proxies usually sell per-IP-per-month. Expect $2.50 – $8 / IP / month depending on country volume. Anything below $1 is almost always datacenter-in-disguise. Above $15 is usually branded \"Amazon dedicated\" for 2× the actual value."
+      },
+      {
+        "title": "5. Operation habits that make your IP \"stick\"",
+        "items": [
+          "1 account per IP. Never rotate between accounts.",
+          "Keep logins between the same 2–4 hour window every day, same fingerprint profile (browser, resolution, languages).",
+          "Do NOT share the same static ISP with scraping / ad-testing traffic. Segregate traffic types on completely separate IPs."
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "metaTitle": "Blog — Proxy FAQs, Troubleshooting & Tutorials",
+    "metaDesc": "Practical Q&A, common pitfalls, and tutorials for proxies, IP reputation and seller-account hygiene.",
+    "sectionHeader": {
+      "eyebrow": "Blog",
+      "title": "Q&A, pitfalls, and tutorials",
+      "desc": "Short, specific posts written for sellers and small-scale devs. No 2,000-word SEO fluff, no listicles of 27 providers."
+    },
+    "readMinSuffix": "min read",
+    "readPost": "Read post",
+    "posts": {
+      "my-ip-score-70-is-it-safe": {
+        "title": "My IP scored 70/100 — is it safe to bind my seller account?",
+        "excerpt": "Short answer: no. Here is what the 0–100 score actually weights, the three sub-scores that matter most, and the minimum thresholds we use for TikTok Shop, Amazon and Mercado.",
+        "category": "FAQ"
+      },
+      "proxy-works-in-browser-fails-in-scraper": {
+        "title": "Proxy works in curl/browser but fails inside my scraper — why?",
+        "excerpt": "Nine common causes, from the trivial (wrong env var name) to the subtle (SNI leaks, Happy Eyeballs fallback, TLS fingerprint mismatch). With a step-by-step debug list.",
+        "category": "Troubleshooting"
+      },
+      "api-wrapper-pattern": {
+        "title": "How a 50-line Worker wrapper cut our AbuseIPDB bill by 92%",
+        "excerpt": "KV cache + rate limit + single-key fan-out is the simplest architectural win for any indie tool site. Full pattern, sample KV key design, and why you should never put third-party keys on the page.",
+        "category": "Behind the scenes"
+      },
+      "tiktok-shop-account-health-checklist": {
+        "title": "TikTok Shop account health — the weekly 10-minute checklist",
+        "excerpt": "Checklist we run on every client account we touch: IP reputation, device fingerprint stability, SIM/KYC linkage freshness, and the 3 logs you should actually read.",
+        "category": "Tutorial"
+      },
+      "static-isp-vs-residential-rotating": {
+        "title": "Static ISP vs rotating residential — when to switch (and when not to)",
+        "excerpt": "The exact decision tree we use: number of accounts, login vs scrape traffic, expected per-IP lifespan, and the 3 red flags that tell you to move away from a provider immediately.",
+        "category": "FAQ"
+      },
+      "blacklist-delisting-playbook": {
+        "title": "IP blacklisted? A pragmatic delisting playbook",
+        "excerpt": "Which 10 blacklists actually matter, which ones you can safely ignore, and a copy-paste template for the 4 providers that actually respond to free-tier delisting requests.",
+        "category": "Tutorial"
+      }
+    }
+  },
+  "blogPost": {
+    "allPosts": "All posts",
+    "badge": "Blog post · {slug}",
+    "comingSoonDesc": "Full article coming soon. In the meantime, the short version — plus all related links — is already available from the blog index.",
+    "whyPublishTitle": "Why we publish incrementally",
+    "whyPublishDesc": "We prioritize shipping the working tools first, then fill in written content around them. Every blog page on this site works without JS and indexes cleanly — even before the full long-form article is written.",
+    "shortVersionTitle": "Short version of this post",
+    "shortVersionSteps": [
+      "Open the relevant tool: IP Reputation, Geo, or Proxy Tester.",
+      "Run the checks the blog post recommends.",
+      "Compare the numbers against the thresholds in the matching proxy guide.",
+      "If still stuck, email us with the output — we answer concrete, short questions first."
+    ]
+  },
+  "reviews": {
+    "metaTitle": "Proxy Provider Reviews — Focused on Small & Mid-tier Services",
+    "metaDesc": "Honest proxy provider reviews. We test small-to-mid tier providers deeply; giants get a quick, sober sanity check, not a sponsored post.",
+    "sectionHeader": {
+      "eyebrow": "Reviews",
+      "title": "Proxy provider reviews",
+      "desc": "Small and mid-tier providers are the focus — we buy plans, run our own Worker + VPS probes, and re-score every 30 days. Big names get a brief, sober recap instead of a sponsored microsite."
+    },
+    "tierLabels": {
+      "giant": "Giant (quick take)",
+      "smallMid": "Small / Mid-tier (deep test)"
+    },
+    "updatedLabel": "Updated {date}",
+    "prosLabel": "Pros",
+    "consLabel": "Cons",
+    "bestForLabel": "Best for:",
+    "fullReview": "Full review",
+    "fullTeardown": "Full teardown",
+    "metricsLabels": {
+      "avgLatency": "Avg latency",
+      "successRate": "Success rate",
+      "minReputation": "Min reputation",
+      "price": "Price"
+    },
+    "methodology": "Methodology: all paid plans purchased with our own funds. Each provider is tested from our Worker broker → 3 overseas VPS (FRA, SJC, SIN) with 200 random IPs per residential plan, 50 per static ISP, 100 per datacenter. Success rate & latency measured against 6 real-world target sites, not provider-owned echo endpoints. Ratings are relative to the tier — a 4/5 small-mid is not directly comparable to a 4/5 giant.",
+    "data": {
+      "netnut-isp": {
+        "name": "NetNut Static ISP",
+        "category": "Static ISP",
+        "tier": "small-mid",
+        "summary": "Clean US/EU static ISP pool with real Comcast / Virgin / Orange ASNs. Hygiene is better than most mid-tier; 72h soak scores rarely drop more than 5 points.",
+        "pros": [
+          "Real ISP ASNs, not relabeled DC",
+          "90+ day IP stability in 8/10 subnets",
+          "No per-GB overcharge on static plans"
+        ],
+        "cons": [
+          "Asian coverage thin",
+          "Dashboard UX still janky",
+          "Dedicated account manager only on >50 IPs"
+        ],
+        "bestFor": "Multi-marketplace sellers with 5–50 accounts."
+      },
+      "smartproxy-residential": {
+        "name": "Smartproxy (Residential)",
+        "category": "Residential",
+        "tier": "small-mid",
+        "summary": "Solid rotating residential gateway. Actual residential share ~88% in our 200-IP sample, which is better than most $3/GB competitors.",
+        "pros": [
+          "Transparent bandwidth billing (egress only)",
+          "24/7 chat with real engineers, not tier-0",
+          "Good JP / SG / AU coverage"
+        ],
+        "cons": [
+          "Failed requests still billed on some endpoints",
+          "Sneaker / ad-targeted sub-pools are oversold"
+        ],
+        "bestFor": "Medium-volume scrapers (10–100 RPM) with mixed geo targets."
+      },
+      "geosurf": {
+        "name": "GeoSurf",
+        "category": "Residential",
+        "tier": "small-mid",
+        "summary": "Decent coverage, very inconsistent IP hygiene. 30-day average reputation swing of ~20 points means you have to re-test subnets monthly.",
+        "pros": [
+          "Hard-to-find MEA cities",
+          "Simple per-GB pricing, no minimums above starter plan"
+        ],
+        "cons": [
+          "Reputation drop-off after first week of use",
+          "Ticket support < 1 response / day on weekends"
+        ],
+        "bestFor": "Short-tail geo jobs when nobody else covers the country.",
+        "readMore": true
+      },
+      "brightdata": {
+        "name": "BrightData (giant)",
+        "category": "Residential",
+        "tier": "giant",
+        "summary": "Coverage and volume are unmatched. But the small-seller experience is clearly deprioritized — minimums, opaque pricing tiers, and hands-off self-service that makes you pay for mistakes.",
+        "pros": [
+          "Widest geo / ASN coverage",
+          "Enterprise-grade SLAs on upper tiers",
+          "Captcha / unlocker add-ons actually work"
+        ],
+        "cons": [
+          "Minimum spend often required after trial",
+          "Small-plan support is mostly ticket bot",
+          "Oversold pools in top e-commerce geos"
+        ],
+        "bestFor": "Teams doing 500K+ requests/month who have a dedicated operator."
+      },
+      "oxylabs": {
+        "name": "Oxylabs (giant)",
+        "category": "Residential",
+        "tier": "giant",
+        "summary": "Stable, well-documented, enterprise-priced. For small shops the math rarely works vs mid-tier providers once you add bandwidth overages.",
+        "pros": [
+          "Predictable success rates on major targets",
+          "Good SDK & docs",
+          "Dedicated account manager on all paid tiers"
+        ],
+        "cons": [
+          "Premium pricing with long contracts",
+          "Custom pricing opaque for non-reference use cases"
+        ],
+        "bestFor": "Scaling teams who value SLA over marginal cost per GB."
+      },
+      "proxyrack-dc": {
+        "name": "ProxyRack (Datacenter)",
+        "category": "Datacenter",
+        "tier": "small-mid",
+        "summary": "Cheap, fast, honest datacenter pool. No fake \"residential-masked\" marketing. Exactly what you want if you know your target tolerates DC IPs.",
+        "pros": [
+          "$0.40–$1.20 per GB prices match invoices exactly",
+          "Subnet diversity is real — 1200+ ASNs in US sample",
+          "No minimums, pause anytime"
+        ],
+        "cons": [
+          "DC is still DC — do not use for seller account logins",
+          "Latency spikes to 300ms+ outside NA/EU"
+        ],
+        "bestFor": "APIs, public data, light scraping of non-protected sites."
+      }
+    }
+  },
+  "reviewDetail": {
+    "allReviews": "All reviews",
+    "badge": "Full review",
+    "h1Prefix": "Review: ",
+    "comingSoonDesc": "Deep-dive content for this review is published on a rolling basis. In the meantime, you can find the summary card with our latest test numbers on the main Reviews index.",
+    "whatYoullSeeTitle": "What you'll see once the full review is live",
+    "whatYoullSeeItems": [
+      "Test configuration (which 3 VPS probe locations, sample size, target sites).",
+      "Per-day charts: success rate, median latency, reputation drift.",
+      "50-sample IP hygiene spreadsheet snapshot with our pass/fail threshold.",
+      "Invoice screenshots (unedited) so you can verify real unit price.",
+      "Support response-time log from 3 tickets."
+    ],
+    "needProviderTitle": "Need a specific provider prioritized?",
+    "needProviderDesc": "Drop us a line. We pick 1 new small-mid provider to deep-test per month based on reader demand."
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy",
+    "metaDesc": "How IPStar handles data, what we store in KV cache, cookies / analytics policy, and your rights under applicable law.",
+    "backToHome": "Back to home",
+    "lastUpdatedLabel": "Last updated: {date}",
+    "h1": "Privacy Policy",
+    "intro": "This page is required by our ad network and payment processors. We have kept it as short and concrete as possible.",
+    "sections": [
+      {
+        "title": "1. Who we are",
+        "desc": "Controller: IPStar Tools (contact: hello@ipstar.net). Site is hosted on Cloudflare Pages; API endpoints run on Cloudflare Workers."
+      },
+      {
+        "title": "2. What we process and why",
+        "items": [
+          "Query inputs (IP addresses / proxy endpoints you submit): used exclusively to build the response for that request. Results are cached in Cloudflare Workers KV for 12–24 hours keyed by the queried IP (not your IP) to protect upstream API quotas.",
+          "Visitor IP: used only for per-client rate limiting inside the Worker. We do not log it to disk and do not join it with any other identifier. It is discarded after the rate-limit window expires.",
+          "Contact form submissions: stored only in the email inbox we use to reply. We delete outreach pitches after 30 days; legitimate inquiries and legal requests for 12 months."
+        ]
+      },
+      {
+        "title": "3. Cookies",
+        "desc": "We set no first-party tracking cookies. The only cookie-like state is:",
+        "items": [
+          "Cloudflare's own security cookies (their privacy applies).",
+          "Ad partners may set third-party cookies on your browser. You can opt out via your browser settings or the ad networks' own tools."
+        ]
+      },
+      {
+        "title": "4. Third parties",
+        "desc": "Our API Worker calls two upstream data providers with the queried IP:",
+        "items": [
+          "ipapi.is — geolocation and basic reputation",
+          "AbuseIPDB — abuse reports and blacklist categorization"
+        ],
+        "descAfter": "Proxy tests are executed via overseas VPS providers. No visitor PII other than the proxy endpoint you typed is sent to those probes."
+      },
+      {
+        "title": "5. Your rights",
+        "desc": "Depending on your jurisdiction, you may have rights to access, correct, or delete personal data we hold about you. Email hello@ipstar.net with subject line \"Data request\" and we will respond within 30 days."
+      },
+      {
+        "title": "6. Children",
+        "desc": "We do not knowingly collect data from individuals under 16. If you believe we have, contact us and we will remove it promptly."
+      },
+      {
+        "title": "7. Changes to this policy",
+        "desc": "We update this page when processing practices change. The \"Last updated\" date at the top is authoritative."
+      }
+    ]
+  },
+  "terms": {
+    "metaTitle": "Terms of Service",
+    "metaDesc": "Terms of Service for ipstar.net — required for ad network onboarding. Acceptable use, disclaimers, liability caps and dispute resolution.",
+    "backToHome": "Back to home",
+    "lastUpdatedLabel": "Last updated: {date}",
+    "h1": "Terms of Service",
+    "intro": "Required for ad and affiliate network onboarding. Governs your use of the ipstar.net website and tools.",
+    "sections": [
+      {
+        "title": "1. Agreement",
+        "desc": "By accessing or using ipstar.net (\"the Service\"), you agree to be bound by these Terms. If you do not agree, do not use the Service."
+      },
+      {
+        "title": "2. Description of the Service",
+        "desc": "The Service provides IP lookup, geolocation, reputation and proxy testing information aggregated from public and commercial third-party sources. All outputs are for informational purposes only."
+      },
+      {
+        "title": "3. Acceptable use",
+        "desc": "You agree not to:",
+        "items": [
+          "Use the Service to target, harass, or harm any individual.",
+          "Attempt to bypass per-IP rate limits, including by rotating IPs to circumvent them.",
+          "Use automated tools to scrape the Service at volume that harms our upstream costs. (If you need API access, contact us — we can usually accommodate at a fair price.)",
+          "Use our output as the sole basis for any credit, employment, insurance, tenant screening, or similar purpose covered by the FCRA, GDPR Article 22 automated decision-making, or equivalent laws."
+        ]
+      },
+      {
+        "title": "4. Account & subscription",
+        "desc": "Most of the Service is provided free of charge without registration. If future paid tiers are offered, their billing, cancellation and refund terms will be disclosed at checkout."
+      },
+      {
+        "title": "5. Intellectual property",
+        "desc": "Trademarks, logos and original site content are owned by IPStar Tools. You may reproduce small excerpts for review or discussion as long as you link back to the original page. Scraping the entire review list to republish on a competing site is not allowed."
+      },
+      {
+        "title": "6. Third-party content & links",
+        "desc": "The Service contains links to external providers and their websites. We are not responsible for their availability, accuracy, pricing or terms. You review our Privacy Policy for a list of upstream data providers."
+      },
+      {
+        "title": "7. Disclaimer of warranties",
+        "desc": "The Service is provided \"AS IS\" and \"AS AVAILABLE\" without warranties of any kind, whether express, implied or statutory. Specifically, we disclaim all warranties of merchantability, fitness for a particular purpose, title, and non-infringement. Geolocation and reputation data are approximate and often incomplete."
+      },
+      {
+        "title": "8. Limitation of liability",
+        "desc": "To the maximum extent permitted by law, IPStar Tools' total aggregate liability for any claim arising out of or relating to the Service will not exceed the greater of (a) amounts actually paid by you to IPStar Tools in the 12 months preceding the claim, or (b) USD 100. We are not liable for lost profits, lost data, or any indirect, special, incidental, or consequential damages."
+      },
+      {
+        "title": "9. Indemnification",
+        "desc": "You agree to defend, indemnify and hold harmless IPStar Tools from claims arising out of your breach of these Terms or your violation of any third-party right, including intellectual property, privacy or consumer protection law."
+      },
+      {
+        "title": "10. Governing law & disputes",
+        "desc": "These Terms are governed by the laws of Singapore, without regard to its conflict of law principles. Any dispute will be resolved by binding, non-class arbitration before the Singapore International Arbitration Centre (SIAC) before a single arbitrator under the Expedited Procedure."
+      },
+      {
+        "title": "11. Severability & changes",
+        "desc": "If any provision is unenforceable, the rest remains in full force. We may update these Terms from time to time; the \"Last updated\" date at the top of this page is the effective date of the latest version."
+      },
+      {
+        "title": "12. Contact",
+        "desc": "Questions or notices about these Terms can be sent to hello@ipstar.net."
+      }
+    ]
+  },
+  "toolsCommon": {
+    "badges": {
+      "datacenter": "Datacenter",
+      "residential": "Residential",
+      "mobile": "Mobile",
+      "vpn": "VPN",
+      "tor": "Tor",
+      "proxy": "Proxy",
+      "unknown": "Unknown",
+      "none": "None",
+      "noneFlagged": "None flagged",
+      "whitelisted": "Whitelisted",
+      "listed": "Listed",
+      "clean": "Clean",
+      "reachable": "Reachable",
+      "unreachable": "Unreachable",
+      "leaked": "Leaked",
+      "noLeak": "No leak",
+      "ok": "OK",
+      "failed": "Failed"
+    },
+    "anonymity": {
+      "elite": "Elite / High Anonymous",
+      "anonymous": "Anonymous",
+      "transparent": "Transparent (leaks IP)",
+      "unknown": "Unknown"
+    },
+    "latencyHint": {
+      "fast": "Fast",
+      "acceptable": "Acceptable",
+      "slow": "Slow"
+    },
+    "errors": {
+      "invalidIp": "Please enter a valid IPv4 address (e.g. 8.8.8.8)."
+    },
+    "misc": {
+      "unknownLocation": "Unknown location",
+      "noData": "No data."
+    }
+  },
+  "geoForm": {
+    "form": {
+      "hint": "Leave empty to resolve your public IP",
+      "placeholder": "IPv4 address (e.g. 1.1.1.1) or blank",
+      "submit": "Lookup",
+      "loading": "Resolving geolocation…",
+      "errorLookup": "Geo lookup failed. Please retry."
+    },
+    "view": {
+      "statLabels": {
+        "ipAddress": "IP Address",
+        "country": "Country",
+        "regionState": "Region / State",
+        "city": "City",
+        "timezone": "Timezone",
+        "coordinates": "Coordinates",
+        "asn": "ASN",
+        "isp": "ISP",
+        "organization": "Organization",
+        "connectionType": "Connection type",
+        "hostingIpType": "Hosting / IP type",
+        "anonymousSignals": "Anonymous signals"
+      },
+      "actions": {
+        "viewOnMap": "View on map"
+      },
+      "disclaimer": "Geolocation granularity varies by provider and network. City-level data is an approximation; do not use for compliance or shipping decisions without cross-checking."
+    }
+  },
+  "reputationForm": {
+    "form": {
+      "hintWithIp": "Pre-filled with your IP. Leave empty to re-check.",
+      "hintEmpty": "Leave empty to check your current IP.",
+      "placeholder": "IPv4 address (e.g. 45.33.32.156) or blank",
+      "submit": "Check Reputation",
+      "loading": "Querying Worker backend (KV cache + ipapi.is + AbuseIPDB)…",
+      "errorLookup": "Lookup failed. Please retry."
+    },
+    "view": {
+      "statLabels": {
+        "ipAddress": "IP Address",
+        "location": "Location",
+        "country": "Country",
+        "timezone": "Timezone",
+        "asn": "ASN",
+        "isp": "ISP",
+        "connection": "Connection",
+        "connectionHintNoProxy": "No proxy signal detected",
+        "usageTags": "Usage Tags",
+        "reports90d": "Reports (90d)",
+        "distinctReporters": "Distinct reporters",
+        "lastReport": "Last report",
+        "blacklistHits": "Blacklist hits",
+        "sources": "Sources"
+      },
+      "sourcesHint": {
+        "cached": "Cached {updated} · TTL {ttl}h",
+        "fresh": "Fresh lookup"
+      },
+      "servedFrom": {
+        "prefix": "Served from ",
+        "kvCache": "KV cache · updated {updated}",
+        "kvCacheTtl": " · TTL {ttl}h",
+        "freshUpstream": "fresh upstream lookup"
+      },
+      "abuseSection": {
+        "title": "Abuse category breakdown",
+        "from": "from AbuseIPDB"
+      },
+      "blacklistSection": {
+        "title": "Blacklist sources",
+        "listedCount": "{count} listed",
+        "noneListed": "None listed"
+      },
+      "table": {
+        "source": "Source",
+        "status": "Status",
+        "type": "Type",
+        "listings": "Listings",
+        "lastDetected": "Last detected"
+      },
+      "disclaimer": "Disclaimer: Scores are indicative and aggregated from public sources. A clean score doesn't guarantee an IP is safe, nor does a bad score prove the current operator is malicious."
+    }
+  },
+  "proxyForm": {
+    "form": {
+      "labels": {
+        "protocol": "Protocol",
+        "hostIp": "Host / IP",
+        "port": "Port",
+        "username": "Username (optional)",
+        "password": "Password (optional)"
+      },
+      "hints": {
+        "hostIp": "e.g. proxy.example.com or 203.0.113.42"
+      },
+      "placeholders": {
+        "host": "proxy.example.com",
+        "port": "8080",
+        "username": "user",
+        "password": "••••••"
+      },
+      "errors": {
+        "required": "Required",
+        "portRange": "1 – 65535"
+      },
+      "submit": "Run proxy test",
+      "loading": "Worker is routing the test to our overseas VPS backend…",
+      "errorTest": "Proxy test failed. Retry or check endpoint."
+    },
+    "view": {
+      "title": {
+        "online": "Proxy is online",
+        "offline": "Proxy did not respond"
+      },
+      "statLabels": {
+        "endpointTested": "Endpoint tested",
+        "reachable": "Reachable",
+        "httpCode": "HTTP code",
+        "latency": "Latency",
+        "protocol": "Protocol",
+        "anonymityLevel": "Anonymity level",
+        "exitIp": "Exit IP",
+        "exitCountry": "Exit country",
+        "upstreamIsp": "Upstream ISP",
+        "dnsLeak": "DNS leak",
+        "testedAt": "Tested at",
+        "errors": "Errors"
+      },
+      "multiTarget": {
+        "title": "Multi-target latencies",
+        "table": {
+          "target": "Target",
+          "result": "Result",
+          "latency": "Latency",
+          "note": "Note"
+        }
+      },
+      "disclaimer": "Tests are executed from our overseas VPS pool via the Worker proxy broker. Results include handshake, request, and target site round-trip. A single snapshot doesn't guarantee long-term stability — repeat at different hours."
+    }
+  }
+}

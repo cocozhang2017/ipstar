@@ -1,0 +1,609 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================
+   IPStar · 高端双主题视觉系统
+   色彩策略:Light(银灰+靛蓝+金芒高光)/Dark(墨蓝+深紫+冰蓝夜光)
+   组件语义类:全局组件的统一视觉入口
+   ========================================================== */
+
+/* Inter — 常用字重（400/500/600/700），latin 子集 + display:swap */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/inter-latin-400-normal.woff2') format('woff2'),
+       local('Inter');
+  size-adjust: 100%;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/inter-latin-500-normal.woff2') format('woff2'),
+       local('Inter');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/inter-latin-600-normal.woff2') format('woff2'),
+       local('Inter');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/inter-latin-700-normal.woff2') format('woff2'),
+       local('Inter');
+}
+
+/* Roboto — 备用 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/roboto-latin-400-normal.woff2') format('woff2'),
+       local('Roboto');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/roboto-latin-500-normal.woff2') format('woff2'),
+       local('Roboto');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/roboto-latin-700-normal.woff2') format('woff2'),
+       local('Roboto');
+}
+
+/* —————  设计令牌 (HSL,兼容 tailwind colors: '--x' → 'hsl(var(--x))') ————— */
+@layer base {
+  :root {
+    /* 背景层:珠光银白 → 柔紫金 微渐变 */
+    --background: 240 60% 99%;
+    --background-elevated: 0 0% 100%;
+    --background-deep: 230 60% 97%;
+
+    /* 前景 */
+    --foreground: 230 40% 14%;
+    --foreground-subtle: 230 20% 40%;
+
+    /* 品牌主色：靛蓝 → 紫 渐变，单一 accent 取中段 235° 82% 62% */
+    --accent: 235 82% 62%;
+    --accent-strong: 248 72% 55%;
+    --accent-soft: 235 95% 93%;
+    --accent-foreground: 0 0% 100%;
+
+    /* 高光：金芒 / 暖金 */
+    --highlight: 44 98% 58%;
+    --highlight-soft: 48 98% 90%;
+
+    /* 语义色 */
+    --success: 152 76% 40%;
+    --success-foreground: 0 0% 100%;
+    --danger: 0 80% 60%;
+    --danger-foreground: 0 0% 100%;
+    --warning: 32 95% 52%;
+    --warning-foreground: 24 40% 12%;
+
+    /* 表面/边框/模糊 */
+    --muted: 230 40% 96%;
+    --muted-foreground: 230 15% 45%;
+    --border: 235 30% 88%;
+    --border-strong: 235 40% 78%;
+    --input: 0 0% 100%;
+    --ring: 235 82% 62%;
+
+    /* 玻璃背景层 rgba(255,255,255,.65) */
+    --glass: 0 0% 100% / 0.65;
+    --glass-border: 235 30% 88% / 0.7;
+
+    /* 装饰渐变 */
+    --grad-primary: linear-gradient(135deg, hsl(250, 95%, 62%) 0%, hsl(235, 82%, 62%) 45%, hsl(200, 98%, 55%) 100%);
+    --grad-highlight: linear-gradient(135deg, hsl(48, 98%, 72%) 0%, hsl(32, 95%, 52%) 60%, hsl(12, 90%, 60%) 100%);
+    --grad-surface: linear-gradient(180deg, hsl(var(--background-elevated)) 0%, hsl(var(--background-deep)) 100%);
+    --grad-hero: radial-gradient(ellipse 80% 50% at 50% 0%, hsl(235 100% 94%) 0%, transparent 60%), radial-gradient(ellipse 60% 50% at 100% 100%, hsl(48 100% 94%) 0%, transparent 55%);
+
+    /* 组件令牌 */
+    --radius: 12px;
+  }
+
+  /* 暗黑：墨蓝+深紫+冰蓝夜光 */
+  .dark {
+    --background: 230 55% 7%;
+    --background-elevated: 230 50% 11%;
+    --background-deep: 235 60% 5%;
+
+    --foreground: 220 30% 96%;
+    --foreground-subtle: 230 15% 72%;
+
+    --accent: 245 92% 72%;
+    --accent-strong: 270 88% 75%;
+    --accent-soft: 245 60% 18%;
+    --accent-foreground: 230 60% 8%;
+
+    --highlight: 44 95% 65%;
+    --highlight-soft: 44 70% 20%;
+
+    --success: 152 70% 55%;
+    --success-foreground: 230 60% 8%;
+    --danger: 2 85% 68%;
+    --danger-foreground: 230 60% 8%;
+    --warning: 36 95% 60%;
+    --warning-foreground: 24 40% 12%;
+
+    --muted: 230 40% 14%;
+    --muted-foreground: 230 15% 65%;
+    --border: 235 35% 22%;
+    --border-strong: 235 50% 32%;
+    --input: 230 45% 12%;
+    --ring: 245 92% 72%;
+
+    --glass: 235 60% 11% / 0.6;
+    --glass-border: 235 40% 28% / 0.65;
+
+    --grad-primary: linear-gradient(135deg, hsl(280, 95%, 70%) 0%, hsl(245, 92%, 72%) 50%, hsl(200, 95%, 70%) 100%);
+    --grad-highlight: linear-gradient(135deg, hsl(50, 100%, 76%) 0%, hsl(28, 98%, 62%) 100%);
+    --grad-surface: linear-gradient(180deg, hsl(230 50% 12%) 0%, hsl(235 60% 7%) 100%);
+    --grad-hero: radial-gradient(ellipse 70% 45% at 50% 0%, hsla(260, 98%, 60%, 0.35) 0%, transparent 60%), radial-gradient(ellipse 60% 50% at 100% 100%, hsla(185, 98%, 55%, 0.22) 0%, transparent 55%);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-image: var(--grad-surface);
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Inter', 'Roboto', ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  /* 页面背景网格纹 */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+      linear-gradient(hsl(var(--border) / 0.55) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border) / 0.55) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 15%, #000 40%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 15%, #000 40%, transparent 80%);
+    opacity: .7;
+  }
+
+  /* 装饰光晕 浮动在背景层 */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: var(--grad-hero);
+    opacity: .95;
+    mix-blend-mode: normal;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: hsl(var(--accent) / 0.22);
+    color: hsl(var(--foreground));
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+}
+
+/* ————— 组件语义层  高端奢华风格卡片/按钮/表单容器 ————— */
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8;
+  }
+
+  /* 主卡片：玻璃+分层阴影+内高光+渐变环边框 */
+  .card {
+    position: relative;
+    border-radius: calc(var(--radius) + 4px);
+    background:
+      linear-gradient(180deg,
+        hsl(var(--background-elevated) / 0.95) 0%,
+        hsl(var(--background-elevated) / 0.8) 100%);
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.8) inset, /* 顶部高光 */
+      0 0 0 1px hsl(var(--accent) / 0.06),
+      0 30px 60px -30px hsl(235 70% 30% / 0.25),
+      0 10px 20px -12px hsl(235 70% 20% / 0.18),
+      0 2px 6px hsl(235 40% 10% / 0.06);
+    backdrop-filter: blur(12px) saturate(140%);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+    overflow: hidden;
+  }
+
+  .card::before {
+    /* 卡片顶部渐变光边 */
+    content: '';
+    position: absolute;
+    left: 0; right: 0; top: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      hsl(var(--accent) / 0.55) 50%,
+      hsl(var(--highlight) / 0.45) 100%);
+    pointer-events: none;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+  @media (min-width: 640px) {
+    .card-body { padding: 1.75rem; }
+  }
+
+  /* Hero 主表单大卡片：外发光边框 */
+  .card-hero {
+    background:
+      linear-gradient(180deg,
+        hsl(var(--background-elevated) / 0.98) 0%,
+        hsl(var(--background-deep) / 0.9) 100%);
+    border: 1px solid hsl(var(--accent) / 0.25);
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.9) inset,
+      0 0 0 1px hsl(var(--accent) / 0.08),
+      0 0 60px hsl(var(--accent) / 0.18),
+      0 40px 80px -30px hsl(235 70% 30% / 0.35),
+      0 15px 28px -16px hsl(235 70% 20% / 0.25);
+  }
+
+  .card-hero::before {
+    height: 2px;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      hsl(var(--highlight) / 0.75) 30%,
+      hsl(var(--accent) / 0.85) 55%,
+      hsl(var(--accent-strong) / 0.7) 80%,
+      transparent 100%);
+  }
+
+  /* 按钮基础 */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold
+           transition-all duration-200 ease-out
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background
+           disabled:pointer-events-none disabled:opacity-50
+           select-none;
+    letter-spacing: -0.01em;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn::after {
+    /* 光泽扫光 */
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      120deg,
+      transparent 20%,
+      hsl(0 0% 100% / 0.35) 50%,
+      transparent 80%);
+    transform: translateX(-100%);
+    transition: transform .8s ease;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+  .btn:hover::after { transform: translateX(100%); }
+
+  /* 主按钮：渐变 + 阴影 */
+  .btn-primary {
+    @apply btn;
+    background-image: var(--grad-primary);
+    color: hsl(var(--accent-foreground));
+    background-size: 140% 140%;
+    background-position: 100% 50%;
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.25) inset,
+      0 0 0 1px hsl(var(--accent-strong) / 0.35),
+      0 14px 30px -10px hsl(var(--accent-strong) / 0.55),
+      0 6px 14px -6px hsl(var(--accent-strong) / 0.35);
+  }
+  .btn-primary:hover {
+    background-position: 0% 50%;
+    transform: translateY(-1px);
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.3) inset,
+      0 0 0 1px hsl(var(--accent-strong) / 0.55),
+      0 20px 40px -12px hsl(var(--accent-strong) / 0.65),
+      0 8px 18px -8px hsl(var(--accent-strong) / 0.45);
+  }
+  .btn-primary:active { transform: translateY(0); }
+
+  /* 次按钮：玻璃 + 悬停注入主色 */
+  .btn-secondary {
+    @apply btn;
+    background:
+      linear-gradient(180deg,
+        hsl(var(--muted) / 0.9) 0%,
+        hsl(var(--muted) / 0.6) 100%);
+    color: hsl(var(--foreground));
+    border: 1px solid hsl(var(--border));
+    backdrop-filter: blur(8px);
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.75) inset,
+      0 8px 20px -12px hsl(235 40% 10% / 0.18);
+  }
+  .btn-secondary:hover {
+    border-color: hsl(var(--accent) / 0.45);
+    background:
+      linear-gradient(180deg,
+        hsl(var(--accent-soft) / 0.9) 0%,
+        hsl(var(--accent-soft) / 0.55) 100%);
+    color: hsl(var(--accent-strong));
+    transform: translateY(-1px);
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.8) inset,
+      0 12px 26px -14px hsl(var(--accent) / 0.28);
+  }
+
+  /* Outline 玻璃钮 */
+  .btn-outline {
+    @apply btn;
+    background: hsl(var(--background-elevated) / 0.55);
+    color: hsl(var(--foreground));
+    border: 1px solid hsl(var(--border-strong) / 0.85);
+    backdrop-filter: blur(10px);
+  }
+  .btn-outline:hover {
+    border-color: hsl(var(--accent));
+    color: hsl(var(--accent-strong));
+    background: hsl(var(--accent-soft) / 0.55);
+    transform: translateY(-1px);
+    box-shadow:
+      0 10px 22px -14px hsl(var(--accent) / 0.35);
+  }
+
+  /* 高亮渐变文字(标题/Logo Star) */
+  .text-grad-primary {
+    background-image: var(--grad-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 160% 160%;
+  }
+  .text-grad-highlight {
+    background-image: var(--grad-highlight);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 140% 140%;
+  }
+
+  /* 输入框 */
+  .input {
+    @apply flex h-11 w-full rounded-xl border bg-background/80
+           px-3.5 py-2 text-sm text-foreground placeholder:text-muted-foreground
+           transition-all duration-200
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent
+           focus-visible:border-accent focus-visible:shadow-[0_0_0_4px_hsl(var(--accent)/0.14)]
+           disabled:cursor-not-allowed disabled:opacity-50;
+    border-color: hsl(var(--border-strong) / 0.8);
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.6) inset,
+      0 6px 14px -10px hsl(235 50% 15% / 0.2);
+  }
+  .dark .input {
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.04) inset,
+      0 6px 16px -10px hsl(0 0% 0% / 0.4);
+  }
+  .input::placeholder { color: hsl(var(--muted-foreground) / 0.85); }
+
+  .label {
+    @apply text-sm font-semibold text-foreground/90 tracking-tight;
+  }
+  .hint {
+    @apply text-xs text-muted-foreground;
+  }
+
+  /* 胶囊 Badge：玻璃底+半透明描边+光泽边 */
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold tracking-wide;
+    background: hsl(var(--muted) / 0.6);
+    border: 1px solid hsl(var(--border-strong) / 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.6) inset;
+  }
+  .badge-muted {
+    @apply badge;
+    background: hsl(var(--muted) / 0.5);
+    color: hsl(var(--muted-foreground));
+  }
+  .badge-accent {
+    @apply badge;
+    color: hsl(var(--accent-strong));
+    background: hsl(var(--accent) / 0.1);
+    border-color: hsl(var(--accent) / 0.35);
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.5) inset,
+      0 0 0 1px hsl(var(--accent) / 0.12),
+      0 10px 22px -14px hsl(var(--accent) / 0.35);
+  }
+  .badge-success {
+    @apply badge;
+    color: hsl(var(--success));
+    background: hsl(var(--success) / 0.12);
+    border-color: hsl(var(--success) / 0.35);
+  }
+  .badge-danger {
+    @apply badge;
+    color: hsl(var(--danger));
+    background: hsl(var(--danger) / 0.12);
+    border-color: hsl(var(--danger) / 0.35);
+  }
+  .badge-warning {
+    @apply badge;
+    color: hsl(var(--warning));
+    background: hsl(var(--warning) / 0.14);
+    border-color: hsl(var(--warning) / 0.35);
+  }
+
+  /* 光泽分隔条 */
+  .shimmer-divider {
+    height: 1px;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      hsl(var(--border-strong) / 0.9) 50%,
+      transparent 100%);
+  }
+
+  /* 技术文章 prose */
+  .prose-technical {
+    @apply text-[15px] leading-7 text-foreground/85;
+  }
+  .prose-technical h1 {
+    @apply mt-2 mb-4 text-2xl font-bold tracking-tight;
+  }
+  .prose-technical h2 {
+    @apply mt-10 mb-4 text-xl font-bold tracking-tight;
+  }
+  .prose-technical h3 {
+    @apply mt-6 mb-2 text-base font-bold;
+  }
+  .prose-technical p {
+    @apply my-4;
+  }
+  .prose-technical ul {
+    @apply my-3 list-disc space-y-2 pl-6 marker:text-accent;
+  }
+  .prose-technical ol {
+    @apply my-3 list-decimal space-y-2 pl-6 marker:text-accent marker:font-bold;
+  }
+  .prose-technical a {
+    @apply text-accent underline-offset-4 hover:underline;
+  }
+  .prose-technical code {
+    @apply rounded-lg border border-border bg-muted/70 px-2 py-0.5 text-[0.85em] font-mono text-foreground;
+  }
+  .prose-technical pre {
+    @apply my-4 overflow-x-auto rounded-xl border border-border bg-muted/50 p-4 text-xs;
+  }
+  .prose-technical pre code {
+    @apply border-none bg-transparent p-0;
+  }
+}
+
+/* ————— 工具类  动画与特效 ————— */
+@layer utilities {
+  /* 大标题扫光光泽 */
+  .shimmer-text {
+    background-image: linear-gradient(100deg,
+      hsl(var(--foreground)) 20%,
+      hsl(var(--highlight)) 45%,
+      hsl(var(--accent-strong)) 55%,
+      hsl(var(--foreground)) 80%);
+    background-size: 250% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmerMove 7s ease-in-out infinite;
+  }
+  @keyframes shimmerMove {
+    0%, 100% { background-position: 120% 0; }
+    50% { background-position: -20% 0; }
+  }
+
+  /* 浮动光晕 blob */
+  .blob {
+    border-radius: 999px;
+    filter: blur(60px);
+    opacity: 0.7;
+    pointer-events: none;
+  }
+  .blob-accent {
+    background: radial-gradient(circle, hsl(var(--accent) / 0.55), transparent 60%);
+  }
+  .blob-highlight {
+    background: radial-gradient(circle, hsl(var(--highlight) / 0.55), transparent 60%);
+  }
+
+  /* 卡片 hover 悬浮提升（给需要动效的卡片） */
+  .card-hover {
+    transition: transform 300ms cubic-bezier(.2,.7,.2,1),
+                box-shadow 300ms cubic-bezier(.2,.7,.2,1),
+                border-color 300ms ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    border-color: hsl(var(--accent) / 0.45);
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.9) inset,
+      0 0 0 1px hsl(var(--accent) / 0.14),
+      0 0 40px hsl(var(--accent) / 0.18),
+      0 36px 72px -32px hsl(235 70% 25% / 0.35),
+      0 16px 32px -16px hsl(235 70% 20% / 0.25);
+  }
+
+  /* 胶囊型内容块(Header 切换器外框) */
+  .capsule {
+    @apply inline-flex items-center gap-0.5 rounded-full border px-1.5 py-1;
+    background: hsl(var(--background-elevated) / 0.7);
+    border-color: hsl(var(--border-strong) / 0.8);
+    backdrop-filter: blur(14px) saturate(150%);
+    -webkit-backdrop-filter: blur(14px) saturate(150%);
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.75) inset,
+      0 10px 24px -14px hsl(235 50% 20% / 0.25);
+  }
+  .capsule > button, .capsule > a {
+    border-radius: 999px;
+  }
+
+  /* 渐变边框包裹：伪元素实现 */
+  .gradient-border {
+    position: relative;
+    border-radius: calc(var(--radius) + 4px);
+  }
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(135deg,
+      hsl(var(--highlight) / 0.5),
+      hsl(var(--accent) / 0.8) 45%,
+      hsl(var(--accent-strong) / 0.5) 100%);
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+  }
+}
