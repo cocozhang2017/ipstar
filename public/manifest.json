@@ -13,13 +13,13 @@
   "dir": "ltr",
   "icons": [
     {
-      "src": "/icon",
+      "src": "https://ipstar.net/icon",
       "sizes": "64x64",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/apple-icon",
+      "src": "https://ipstar.net/apple-icon",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"
